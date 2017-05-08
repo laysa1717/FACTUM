@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    tools:context="br.com.factum.app.MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:layout_height="fill_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/content_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:background="@color/azul_fundo"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ESTUDO DO DIA"
+                android:textColor="@color/preto"
+                android:layout_gravity="center"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border"
+                android:foregroundGravity="center"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/data_item_estudo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:layout_gravity="center"
+                    android:text="12/09"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="8"
+                    android:background="@drawable/borderinside"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/materia_item_estudo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:textColor="@color/preto"
+                        android:layout_marginTop="28dp"
+                        android:text="Comunicação Oral e Escrita"
+                        android:layout_gravity="center"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/materia_item_descricao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10dp"
+                        android:textColor="@color/cinza"
+                        android:layout_marginLeft="35dp"
+                        android:text="Realismo e Naturalismo, CONCORDÂNCIA, Infinitivo - Conocrdância"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/assunto_item_estudo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="231dp"
+                android:id="@+id/view_flipper">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="217dp"
+                    android:src="@drawable/img1" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="218dp"
+                    android:src="@drawable/img2" />
+
+            </ViewFlipper>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="185dp"
+                android:src="@drawable/hahaha"
+                />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
